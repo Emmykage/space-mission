@@ -1,0 +1,40 @@
+header{
+    width: 100%
+}
+nav{
+    width: 80%;
+    margin: auto;
+    /* padding-right: 20%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo {
+    display: flex;
+}
+nav .logo h1{
+    font-size: 40px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    padding: 8px 16px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+.logo img{
+    width: 80px;
+}
+.page-contain{
+    width: 80%;
+    margin: auto;
+}
+.items{
+    width: 100%;
+}
