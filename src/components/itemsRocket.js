@@ -1,20 +1,31 @@
 import React from "react"
 
 const ItemRocket = (props) =>{
-    const {title, description} = props
+    const {title, description, image } = props
     return(
-        <div className="page-contain">
-            <div  className="items"> 
-          <img ></img>
-          <div>
+        <li>
+            <div className="row">
+                <div className="display">
+                <img src={image} ></img>
+
+            </div>
+            <div className="content">
             <h2>{title}</h2>
             <p>{description}</p>
-          </div>
+            <button type='button'>Reserve Rocket</button>
+            
+            </div>
 
-        </div>
+            </div>
+           
+            
+          
 
-        </div>
-        
+        </li>
+      
+         
+     
+
     )
 
 }

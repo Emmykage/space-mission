@@ -1,8 +1,16 @@
+*{
+    box-sizing: border-box;
+}
 header{
-    width: 100%
+    width: 100%;
+    background-color: aliceblue;
+}
+a{
+    font-size: 23px;
 }
 nav{
     width: 80%;
+    padding: 24px 38px 24px 0;
     margin: auto;
     /* padding-right: 20%; */
     display: flex;
@@ -13,13 +21,19 @@ nav .logo {
     display: flex;
 }
 nav .logo h1{
-    font-size: 40px;
+    font-size: 34px;
+}
+ul{
+    list-style: none;
 }
 nav ul{
     display: flex;
-    list-style: none;
+
     justify-content: space-between;
     align-items: center;
+}
+.items li{
+    margin:10px auto;
 }
 nav ul li{
     padding: 8px 16px;
@@ -29,12 +43,38 @@ nav ul li a{
 }
 
 .logo img{
-    width: 80px;
+    width: 120px;
+    margin-right: 24px;
 }
 .page-contain{
     width: 80%;
     margin: auto;
+
 }
 .items{
     width: 100%;
 }
+.row{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.display{
+   flex-basis: 20%;
+   margin-right: 18px;
+    background-color: brown;
+    padding: 18px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.display img{
+    width: 100%;
+    border-radius: 100%;
+}
+.content{
+    flex-basis: 65%;
+    padding: 20px;
+     /* background-color: brown; */
+ }
+ button{
+    padding: 8px 12px;
+ }

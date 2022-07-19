@@ -2,6 +2,7 @@ import Mission from './components/mission';
 import Navigation from './components/Navigation';
 import Rocket from './components/rockets';
 import { Route, Routes } from 'react-router-dom';
+import './components/styles.css'
 
 function App() {
   return (

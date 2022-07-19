@@ -1,16 +1,17 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import {NavLink} from 'react-router-dom'
 import './styles.css'
-import logo from './images/planet-space.png'
+import logo from './images/planet.png'
 const Navigation =  () =>{
 
     return (
         <header>
             <nav>
-                <Link to='/' className="logo"><img src={logo} alt='space-logo'></img> <h1>Space Travelers Hub</h1></Link>
+                <NavLink to='/' className="logo"><img src={logo} alt='space-logo'></img> <h1>Space Travelers Hub</h1></NavLink>
                 <ul>
-                    <li><Link to='/'>Rocket</Link></li>
-                    <li><Link to='/mission'>Missiion</Link></li>
+                    <li><NavLink activeClassName='current' to='/'>Rocket</NavLink></li>
+                    <li><NavLink to='/mission'>Missiion</NavLink></li>
                     <li><a href='/profile'>Profile</a></li>
 
                 </ul>
