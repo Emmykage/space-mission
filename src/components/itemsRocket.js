@@ -1,7 +1,20 @@
-import React from "react"
+// import React, { useState } from "react"
+import { useDispatch} from "react-redux/es/exports"
+import { toggleReservation } from "../redux/rockets/rocketdata"
 
 const ItemRocket = (props) =>{
-    const {title, description, image } = props
+    // const [reserveText, setReserve] = useState('Reserve Rocket')
+ 
+    const dispatch = useDispatch()
+    const {title, description, image, id, reserve} = props
+    console.log(reserve)
+
+    const handleReserve = () =>{
+        dispatch(toggleReservation(id))
+        // console.log(id)
+            
+    }
+     
     return(
         <li>
             <div className="row">
@@ -12,7 +25,7 @@ const ItemRocket = (props) =>{
             <div className="content">
             <h2>{title}</h2>
             <p>{description}</p>
-            <button type='button'>Reserve Rocket</button>
+            <button id={id} type='button' onClick={handleReserve}>{reserve ? `cancel reservation` : `reserve rocket`  }</button>
             
             </div>
 

@@ -1,4 +1,4 @@
-import Mission from './components/mission';
+import Mission from './components/missions';
 import Navigation from './components/Navigation';
 import Rocket from './components/rockets';
 import { Route, Routes } from 'react-router-dom';
@@ -11,7 +11,7 @@ function App() {
       
       <Routes>
         <Route path='/' element={<Rocket />} />
-        <Route path='mission'element={<Mission />} />
+        <Route path='/missions'element={<Mission />} />
 
       </Routes>
       

@@ -1,22 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { getRocketData } from "../redux/rockets/rocketdata";
 import ItemRocket from "./itemsRocket";
 const Rocket = ()=>{
-    const [rockets, setRocket] =useState([
-        {
-            id: 1,
-            title: "falcon one",
-            description: 'jdfjh dkhdghj ghfkai d sokhjkd soi dfkhidioaso eflasposjdj doijfd doiikdaifuieri wspiodjpdsort oirturtjrir rotirtiruyrjhgh etietht',
-            image: './rocketsssssss.jpg'
+    // const [rockets, setRocket] =useState()
+    const rockets = useSelector((state) => state.rockets);
+    const dispatch =  useDispatch()
+    useEffect(()=>{
+        dispatch(getRocketData())
 
-        },
-        {
-            id: 1,
-            title: "falcon two",
-            description: 'jdfjh dkhdghj ghfkai d sokhjkd soi dfkhidioaso eflasposjdj doijfd doiikdaifuieri wspiodjpdsort oirturtjrir rotirtiruyrjhgh etietht',
-            image: './rocketsssssss.jpg'
-
-        }
-    ])
+    }, [])
     return(
         <div className="content-container">
            
@@ -24,7 +17,7 @@ const Rocket = ()=>{
             <div  className="items"> 
             <ul> 
                 {rockets.map(rocket =>(
-                   <ItemRocket key={rocket.id} title={rocket.title} description={rocket.description} image={rocket.image}/>
+                   <ItemRocket key={rocket.id} title={rocket.title} description={rocket.description} image={rocket.image} id={rocket.id} reserve={rocket.reservation}/>
                 ))}
 
 </ul>

@@ -10,8 +10,8 @@ const Navigation =  () =>{
             <nav>
                 <NavLink to='/' className="logo"><img src={logo} alt='space-logo'></img> <h1>Space Travelers Hub</h1></NavLink>
                 <ul>
-                    <li><NavLink activeClassName='current' to='/'>Rocket</NavLink></li>
-                    <li><NavLink to='/mission'>Missiion</NavLink></li>
+                    <li><NavLink to='/'>Rocket</NavLink></li>
+                    <li><NavLink to='/missions'>Mission</NavLink></li>
                     <li><a href='/profile'>Profile</a></li>
 
                 </ul>

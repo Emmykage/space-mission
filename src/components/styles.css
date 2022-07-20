@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
 }
 header{
     width: 100%;
@@ -7,6 +9,7 @@ header{
 }
 a{
     font-size: 23px;
+    font-weight: 500;
 }
 nav{
     width: 80%;
@@ -34,6 +37,7 @@ nav ul{
 }
 .items li{
     margin:10px auto;
+    background-color: aliceblue;
 }
 nav ul li{
     padding: 8px 16px;
@@ -69,6 +73,7 @@ nav ul li a{
 .display img{
     width: 100%;
     border-radius: 100%;
+    height: 100%;
 }
 .content{
     flex-basis: 65%;

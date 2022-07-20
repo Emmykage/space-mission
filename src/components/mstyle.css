@@ -1,0 +1,31 @@
+.row{
+    /* background-color: green; */
+    justify-content: space-between;
+}
+.small-container{
+width: 80%;
+margin: auto;
+}
+.mission{
+flex-basis: 10%;
+}
+.description{
+flex-basis: 60%;
+}
+.status{
+    flex-basis: 20%;
+
+}
+.empty{
+    flex-basis: 10%;
+    background-color: yellow;
+}
+.missList:nth-child(odd){
+    background-color: grey;
+}
+.b-right{
+    border: 1px solid grey;
+}
+.b-left{
+    border-left: 1px solid grey;
+}
