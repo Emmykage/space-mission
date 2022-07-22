@@ -11,10 +11,15 @@ const url = 'https://api.spacexdata.com/v3/rockets'
 
 const defaultState = [];
 
-export default function Rocketreducer (state = defaultState, action){
+export default function Rocketreducer (state = [], action){
     switch (action.type) {
         case GET_ROCKET_DATA:
-            return action.payload
+            return action.payload.map(r =>{
+                return{
+                    ...r,
+                    reservation: false
+                }
+            })
             //code
             case RESERVATION:
                 return state.map(rocket =>{
@@ -48,7 +53,7 @@ export const getRocketData = ()=> async (dispatch) =>{
             title: rocket.rocket_name,
             description: rocket.description,
             image: rocket.flickr_images[0],
-            reservation: false
+            
 
         }
         rockets.push(newRocketTrip)

@@ -3,9 +3,15 @@
     font-size: 18px;
     font-weight: 400;
 }
+.container{
+    width: 100%;
+    padding: 0;
+    background-color:  #ebedf1
+    ;
+  }
 header{
     width: 100%;
-    background-color: aliceblue;
+    background-color: #536dad;
 }
 a{
     font-size: 23px;
@@ -22,6 +28,7 @@ nav{
 }
 nav .logo {
     display: flex;
+    color: rgb(242, 133, 133);
 }
 nav .logo h1{
     font-size: 34px;
@@ -44,6 +51,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
+    color: white;
 }
 
 .logo img{
@@ -61,6 +69,11 @@ nav ul li a{
 .row{
     display: flex;
     /* justify-content: space-between; */
+}
+.row h2{
+    font-size: 29px;
+    color: 	#3a6c7a;
+    font-weight: 600;
 }
 .display{
    flex-basis: 20%;
@@ -81,5 +94,9 @@ nav ul li a{
      /* background-color: brown; */
  }
  button{
+    background-color: #7a683a;
     padding: 8px 12px;
+    color: #fff;
+    border: none;
  }
+ 

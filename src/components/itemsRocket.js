@@ -3,15 +3,14 @@ import { useDispatch} from "react-redux/es/exports"
 import { toggleReservation } from "../redux/rockets/rocketdata"
 
 const ItemRocket = (props) =>{
-    // const [reserveText, setReserve] = useState('Reserve Rocket')
- 
+    
     const dispatch = useDispatch()
     const {title, description, image, id, reserve} = props
-    console.log(reserve)
+  
 
     const handleReserve = () =>{
         dispatch(toggleReservation(id))
-        // console.log(id)
+        
             
     }
      

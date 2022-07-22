@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getRocketData } from "../redux/rockets/rocketdata";
 import ItemRocket from "./itemsRocket";
 const Rocket = ()=>{
-    // const [rockets, setRocket] =useState()
     const rockets = useSelector((state) => state.rockets);
     const dispatch =  useDispatch()
     useEffect(()=>{
         dispatch(getRocketData())
 
-    }, [])
+    }, []);
     return(
         <div className="content-container">
            
