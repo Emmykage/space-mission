@@ -46,7 +46,6 @@ export const getRocketData = ()=> async (dispatch) =>{
     const response = await fetch(url);
     const data =  await response.json();
     const rockets = [];
-    // console.log(rockets);
     data.forEach(rocket =>{
         const newRocketTrip = {
             id: rocket.id,

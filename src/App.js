@@ -14,6 +14,7 @@ function App() {
         <Route path='/' element={<Rocket />} />
         <Route path='/missions'element={<Mission />} />
         <Route path='/profile' element={<Profile />} />
+   
 
       </Routes>
       

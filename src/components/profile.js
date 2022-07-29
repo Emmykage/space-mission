@@ -1,11 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
+
 const Profile = ()=>{
     const missionTrips = useSelector(state => state.missions);
     const rocketTrips = useSelector(state => state.rockets);
     const myMissions = missionTrips.filter(trip => trip.status === true)
     const myRocketTrips = rocketTrips.filter(trip => trip.reservation === true)
-    console.log(myRocketTrips)
+
     return(
 <div>
 

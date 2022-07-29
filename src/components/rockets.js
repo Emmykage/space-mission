@@ -6,9 +6,10 @@ const Rocket = ()=>{
     const rockets = useSelector((state) => state.rockets);
     const dispatch =  useDispatch()
     useEffect(()=>{
+        if(rockets.length === 0)
         dispatch(getRocketData())
 
-    }, []);
+    }, [rockets.length, dispatch]);
     return(
         <div className="content-container">
            
